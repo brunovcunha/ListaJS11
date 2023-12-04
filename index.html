@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Lista 11</title>
+</head>
+
+<body>
+  <form>
+    <div class="mb-3">
+      <label for="dataNasc" class="form-label">Data de Nascimento:</label>
+
+      <input type="text" class="form-control" id="dataNasc" value="04/12/2023">
+
+      <button type="submit" class="btn btn-primary" id="validaData">Validar</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="cpf" class="form-label">CPF</label>
+
+      <input type="text" class="form-control" id="cpf" value="000.000.000-00"
+        onKeyPress="inserirMascara('cpf','xxx.xxx.xxx-xx')">
+
+      <button type="submit" class="btn btn-primary" id="validaCpf">Validar</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="matricula" class="form-label">Matrícula</label>
+
+      <input type="text" class="form-control" id="matricula" value="iftm-123/152-df">
+
+      <button type="submit" class="btn btn-primary" id="validaMatricula">Validar</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="disciplina" class="form-label">Disciplina</label>
+
+      <input type="text" class="form-control" id="disciplina" value="df-25.111-iftm"
+        onKeyPress="inserirMascara('disciplina','yy-xx.xxx-yyyy')">
+
+      <button type="submit" class="btn btn-primary" id="validaDisciplina">Validar</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="disciplina2" class="form-label">Disciplina 02</label>
+
+      <input type="text" class="form-control" id="disciplina2" value="DF-25.111-IFTM"
+        onKeyPress="inserirMascara('disciplina2','yy-xx.xxx-yyyy')">
+
+      <button type="submit" class="btn btn-primary" id="validaDisciplina2">Validar</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="disciplina3" class="form-label">Disciplina 03</label>
+
+      <input type="text" class="form-control" id="disciplina3" value="MT-11.222-iftm">
+
+      <button type="submit" class="btn btn-primary" id="validaDisciplina3">Validar</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="campus" class="form-label">Campus</label>
+
+      <input type="text" class="form-control" id="campus" value="IFTM campus Uberlândia Centro">
+
+      <button type="submit" class="btn btn-primary" id="validaCampus">Validar</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="telefone" class="form-label">Telefone</label>
+
+      <input type="text" class="form-control" id="telefone" value="+55(34)11111-1111" onKeyPress="inserirMascara('telefone','+yy(xx)xxxxx-xxxx')">
+
+      <button type="submit" class="btn btn-primary" id="validaTelefone">Validar</button>
+    </div>
+
+  <div class="mb-3">
+    <label for="telefone2" class="form-label">Telefone 02</label>
+
+    <input type="text" class="form-control" id="telefone2" value="(034) 9 5555-5555" >
+
+    <button type="submit" class="btn btn-primary" id="validaTelefone2">Validar</button>
+  </div>
+
+  <div class="mb-3">
+    <label for="altura" class="form-label">Altura</label>
+
+    <input type="text" class="form-control" id="altura" value="1.9" >
+
+    <button type="submit" class="btn btn-primary" id="validaAltura">Validar</button>
+  </div>
+
+  <div class="mb-3">
+    <label for="faturamento" class="form-label">Faturamento</label>
+
+    <input type="text" class="form-control" id="faturamento" value="R$237.122.357.128,66" >
+
+    <button type="submit" class="btn btn-primary" id="validaFaturamento">Validar</button>
+  </div>
+
+  <div class="mb-3">
+    <label for="cronometro" class="form-label">Cronômetro</label>
+
+    <input type="text" class="form-control" id="cronometro" value="02:59:30:05" >
+
+    <button type="submit" class="btn btn-primary" id="validaCronometro">Validar</button>
+  </div>
+</form>
+
+  <script src="js/script.js"></script>
+  <script src="js/jMaskWiFi.js"></script>
+</body>
+
+</html>
